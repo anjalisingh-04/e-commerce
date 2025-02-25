@@ -56,30 +56,29 @@ const BestSeller = () => {
         <>
             <section className="product-card">
                 <div className="outer-card">
-                    <div className="div">
-                        <div className="div1">
-                            <h2>Bestsellers</h2>
-                            <p className="info">Browse the best of our favorite sale styles and brands.</p>
-                        </div>
-                        <div className="div2">
-                            <div className="btn-box">
-                                {categories.map((category) => (
-                                    <button
-                                        key={category}
-                                        className={`px-5 py-2 rounded-full text-sm font-medium border transition-all ${selectedCategory === category
-                                            ? 'bg-blue-600 text-white shadow-md'
-                                            : 'border-gray-300 text-gray-700 hover:bg-gray-200'
-                                            }`}
-                                        onClick={() => setSelectedCategory(category)}
-                                    >
-                                        {category}
-                                    </button>
-                                ))}
-                            </div>
 
-                        </div>
+                    <h2>Bestsellers</h2>
+                    <p className="info">Browse the best of our favorite sale styles and brands.</p>
 
+
+                    <div className="btn-box">
+                        {categories.map((category) => (
+                            <button
+                                key={category}
+                                className={`px-5 py-2 m-1 rounded-full text-sm font-medium border transition-all ${selectedCategory === category
+                                    ? 'bg-blue-600 text-white shadow-md'
+                                    : 'border-gray-300 text-gray-700 hover:bg-gray-200'
+                                    }`}
+                                onClick={() => setSelectedCategory(category)}
+                            >
+                                {category}
+                            </button>
+                        ))}
                     </div>
+
+
+
+
 
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
@@ -148,6 +147,9 @@ const Automate = () => {
 
 
 export default BestSeller;
+
+
+
 
 
 

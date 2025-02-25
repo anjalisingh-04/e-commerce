@@ -12,6 +12,8 @@ import PromoSection from '@/components/home/card';
 import BestSeller from '@/components/home/productcard';
 
 
+
+
 export default function HomeComp() {
 
 

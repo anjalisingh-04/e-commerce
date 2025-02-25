@@ -1,17 +1,13 @@
 "use client"
 
-import { useState } from "react";
-
+import { useState } from "react"
 
 const Btn = () => {
-
-    const [value, setvalue] = useState(0);
+    const [value, setvalue] = useState(0)
 
     const handleClick = (newvalue: any) => {
         setvalue(newvalue)
     }
-
-
     return (
         <>
             <button className={value == 0 ? "btn-selected" : "btn"} onClick={() => handleClick(0)}>0</button>
@@ -21,5 +17,4 @@ const Btn = () => {
     )
 }
 
-
-export default Btn;
+export default Btn

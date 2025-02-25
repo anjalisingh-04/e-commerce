@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import AccordionUsage from './accordion';
 
 const categorie = [
   { name: 'Security Devices', image: '/doorbells.webp' },
@@ -39,6 +40,7 @@ export function CategoryGrid() {
       <BestSeller />
       <AutoSolution />
       <BrandCard />
+      <PromoSection />
     </>
   );
 }
@@ -183,6 +185,7 @@ const AutoSolution = () => {
             <p className="description">
               Smart bulbs are a simple way to add automation to your home. You can control them using your smartphone or voice commands.
             </p>
+            <AccordionUsage />
           </div>
 
 
@@ -230,6 +233,49 @@ const BrandCard = () => {
   )
 
 }
+
+
+
+
+const PromoSection = () => {
+  return (
+    <section className="promo-section">
+      <div className="content">
+        <span className="badge">Badge Heading</span>
+        <h2>Don,t miss a thing.</h2>
+        <p>
+          See, hear, and speak to visitors in real-time from anywhere on your phone or tablet.
+        </p>
+
+        <div className="features">
+          <div className="feature-item">
+            <h3>Record and capture</h3>
+            <p>Get instant alerts for anyone who approaches, even if they don,t press the doorbell.</p>
+          </div>
+          <hr />
+          <div className="feature-text">Rich notifications</div>
+          <div className="feature-text">Smoke alarm detection</div>
+        </div>
+      </div>
+
+      <div className="image-container">
+        <Image
+          src="/m-tab1.webp"
+          alt="Product"
+          width={450}
+          height={300}
+        />
+      </div>
+    </section>
+
+  );
+};
+
+
+
+
+
+
 
 
 
