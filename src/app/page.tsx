@@ -9,7 +9,7 @@ import Footer from '@/components/footer';
 import HomeWrapper from '@/components/wrapper/Home';
 import HomeBanner from '@/components/home/banner';
 import PromoSection from '@/components/home/card';
-
+import BestSeller from '@/components/home/productcard';
 
 
 export default function HomeComp() {
@@ -21,13 +21,21 @@ export default function HomeComp() {
       <HomeWrapper>
         <HomeBanner />
         <PromoSection />
-
-
+        <BestSeller />
       </HomeWrapper>
+
+
     </>
 
   );
 }
+
+
+
+
+
+
+
 
 
 

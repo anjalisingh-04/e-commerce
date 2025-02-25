@@ -4,6 +4,7 @@ import "../styles/nav.scss";
 import "../styles/footer.scss";
 import "../styles/homebanner.scss";
 import "../styles/card.scss";
+import "../styles/productcard.scss";
 
 
 

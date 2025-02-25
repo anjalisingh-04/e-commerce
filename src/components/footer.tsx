@@ -22,8 +22,9 @@ const Footer = () => {
                             <p className='p1'>Elevate your home<br></br> with smart technology.</p>
                         </div>
 
-                        <div>
+                        <div >
                             <h3>Company</h3>
+
                             <ul className="ul">
                                 <Link href="#">
                                     Wholesale
@@ -50,39 +51,42 @@ const Footer = () => {
                                 </Link>
 
                             </ul>
+
                         </div>
 
 
                         <div>
                             <h3 >Resources</h3>
                             <ul className="ul">
+
                                 <Link href="#">
-                                    <li>About</li>
+                                    About
                                 </Link>
 
                                 <Link href="#">
-                                    <li>Blog</li>
+                                    Blog
                                 </Link>
 
                                 <Link href="#">
-                                    <li>Careers</li>
+                                    Careers
                                 </Link>
 
                                 <Link href="#">
-                                    <li>Find a store</li>
+                                    Find a store
                                 </Link>
 
                                 <Link href="#">
-                                    <li>Press</li>
+                                    Press
                                 </Link>
 
                                 <Link href="#">
-                                    <li>Support</li>
+                                    Support
                                 </Link>
 
                                 <Link href="#">
-                                    <li>Privacy</li>
+                                    Privacy
                                 </Link>
+
 
                             </ul>
                         </div>
