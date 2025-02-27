@@ -185,7 +185,6 @@ const AutoSolution = () => {
             <p className="description">
               Smart bulbs are a simple way to add automation to your home. You can control them using your smartphone or voice commands.
             </p>
-            <AccordionUsage />
           </div>
 
 
@@ -249,12 +248,13 @@ const PromoSection = () => {
 
         <div className="features">
           <div className="feature-item">
-            <h3>Record and capture</h3>
-            <p>Get instant alerts for anyone who approaches, even if they don,t press the doorbell.</p>
+            <AccordionUsage />
+            {/* <h3>Record and capture</h3>
+            <p>Get instant alerts for anyone who approaches, even if they don,t press the doorbell.</p> */}
           </div>
-          <hr />
+          {/* <hr />
           <div className="feature-text">Rich notifications</div>
-          <div className="feature-text">Smoke alarm detection</div>
+          <div className="feature-text">Smoke alarm detection</div> */}
         </div>
       </div>
 

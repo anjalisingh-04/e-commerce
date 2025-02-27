@@ -6,6 +6,8 @@ import "../styles/homebanner.scss";
 import "../styles/card.scss";
 import "../styles/productcard.scss";
 import "../styles/btn.scss";
+import "../styles/productpage.scss";
+import "../styles/accordion.scss";
 
 
 
