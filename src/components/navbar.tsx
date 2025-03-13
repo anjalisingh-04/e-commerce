@@ -104,12 +104,12 @@ export default function Navbar() {
                     <div className="nav-s2">
                         <div className="nav-s2-box1">
                             <div className="hidden md:flex space-x-8 text-gray-700 text-sm">
-                                <a href="#" className="flex items-center hover:text-black">Features</a>
-                                <a href="#" className="flex items-center hover:text-black">Shop</a>
+                                <a href="#" className=" flex items-center hover:text-black">Features</a>
+                                <a href="#" className=" flex items-center hover:text-black">Shop</a>
                                 <a href="#" className="hover:text-black">Doorbells</a>
-                                <a href="#" className="flex items-center hover:text-black">Security</a>
+                                <a href="#" className=" flex items-center hover:text-black">Security</a>
                                 <a href="#" className="flex items-center hover:text-black">Accessories</a>
-                                <a href="#" className="hover:text-black">Journal</a>
+                                <a href="#" className=" hover:text-black">Journal</a>
                             </div>
                         </div>
 

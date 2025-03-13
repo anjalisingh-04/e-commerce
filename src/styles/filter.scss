@@ -1,0 +1,252 @@
+.top-container {
+    padding: 20px 0px 0px 0px;
+
+    nav.ho-fo-ac {
+        color: #6b7280;
+        font-size: 14px;
+        margin-bottom: 16px;
+
+        span {
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .active {
+            font-weight: bold;
+            color: #000;
+        }
+    }
+
+    h1 {
+        font-size: 15px;
+        font-weight: bold;
+        color: #111827;
+
+        span.subtext {
+            font-size: 13px;
+            color: #6b7280;
+        }
+    }
+
+    .filters-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #e5e7eb;
+
+        .filters {
+            display: flex;
+            gap: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #4b5563;
+
+            .active {
+                font-weight: bold;
+                color: #000;
+                text-transform: uppercase;
+            }
+        }
+
+        .filter-options {
+            display: flex;
+            gap: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #4b5563;
+
+            span {
+                cursor: pointer;
+
+
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+
+        .sort-dropdown {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            span {
+                font-size: 14px;
+                color: #4b5563;
+            }
+
+            select {
+                border: 1px solid #d1d5db;
+                border-radius: 6px;
+                padding: 4px 12px;
+                font-weight: 500;
+                background-color: #fff;
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+                outline: none;
+                transition: all 0.2s;
+
+                &:focus {
+                    border-color: #d1d5db;
+                    box-shadow: 0px 0px 5px rgba(107, 114, 128, 0.3);
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+.container {
+    display: flex;
+
+}
+
+
+.container-1 {
+
+
+    display: flex;
+    flex-direction: column;
+
+    .menwo {
+
+        border: #d6d1d1 solid 1px;
+        padding: 8px 20px 8px 20px;
+        color: #555;
+        display: flex;
+        flex-direction: column;
+
+
+        label {
+            padding: 6px 0px 0px 0px;
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+            display: flex;
+            gap: 8px;
+        }
+
+
+
+    }
+
+    .categories {
+        padding: 20px;
+        border: #d6d1d1 solid 1px;
+        display: flex;
+        flex-direction: column;
+
+        h5 {
+            padding: 6px 0px 8px 0px;
+            font-weight: bold;
+        }
+
+        label {
+            padding: 6px 0px 0px 0px;
+            font-size: 15px;
+            color: black;
+            display: flex;
+            gap: 8px;
+        }
+
+        span {
+            color: #918c8c;
+            font-size: 10px;
+
+        }
+    }
+
+
+    .brand {
+        padding: 20px;
+        border: #d6d1d1 solid 1px;
+        display: flex;
+        flex-direction: column;
+
+        h5 {
+            padding: 6px 0px 8px 0px;
+            font-weight: bold;
+        }
+
+        label {
+            display: flex;
+            gap: 8px;
+            padding: 6px 0px 0px 0px;
+            font-size: 15px;
+            color: black;
+        }
+
+        span {
+            color: #918c8c;
+            font-size: 10px;
+
+        }
+    }
+
+
+    .color {
+        padding: 20px;
+        border: #d6d1d1 solid 1px;
+        display: flex;
+        flex-direction: column;
+
+        h5 {
+            padding: 6px 0px 8px 0px;
+            font-weight: bold;
+        }
+
+        label {
+            padding: 6px 0px 0px 0px;
+            font-size: 15px;
+            color: black;
+            display: flex;
+            gap: 8px;
+        }
+
+        span {
+            color: #918c8c;
+            font-size: 10px;
+
+        }
+    }
+
+
+
+
+    .dis-range {
+        padding: 20px;
+        border: #d6d1d1 solid 1px;
+        display: flex;
+        flex-direction: column;
+
+        h5 {
+            padding: 6px 0px 8px 0px;
+            font-weight: bold;
+        }
+
+        label {
+            padding: 6px 0px 0px 0px;
+            font-size: 15px;
+            color: black;
+            display: flex;
+            gap: 8px;
+        }
+
+        span {
+            color: #918c8c;
+            font-size: 10px;
+
+        }
+    }
+
+
+
+
+}

@@ -108,7 +108,10 @@
 
     border-radius: 8px;
 
-    box-shadow: 0 10px 15px -3px gray;
+    &:hover {
+        box-shadow: 0 10px 15px -3px gray;
+    }
+
 }
 
 
@@ -127,7 +130,10 @@
 
     border-radius: 8px;
 
-    box-shadow: 0 10px 15px -3px gray;
+    &:hover {
+        box-shadow: 0 10px 15px -3px gray;
+    }
+
 
     img {
         width: 100%;
@@ -157,7 +163,11 @@
 
     color: white;
 
-    box-shadow: 0 10px 15px -3px gray;
+    &:hover {
+        box-shadow: 0 10px 15px -3px gray;
+    }
+
+
 
     background: linear-gradient(#e66465, #9198e5);
 }
@@ -178,7 +188,11 @@
 
     border-radius: 8px;
 
-    box-shadow: 0 10px 15px -3px gray;
+    &:hover {
+        box-shadow: 0 10px 15px -3px gray;
+    }
+
+
 
 }
 

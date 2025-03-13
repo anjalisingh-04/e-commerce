@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import Marquee from "react-fast-marquee";
 import { CategoryGrid } from './categoriescard';
+import Link from 'next/link';
+
 
 
 
@@ -14,6 +16,7 @@ const products = [
         price: 82.0,
         image: '/smart home speaker.webp',
         category: 'Speakers',
+
     },
     {
         id: 2,
@@ -83,7 +86,7 @@ const BestSeller = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
                         {filteredProducts.map((product) => (
-                            <div key={product.id} className="p-6 shadow-lg rounded-lg  transition-shadow">
+                            <div key={product.id} className="p-6  rounded-lg  transition-shadow">
                                 <img src={product.image} alt={product.name} />
                                 <div className="product-info">
                                     <h3>{product.brand}</h3>

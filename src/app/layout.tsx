@@ -8,6 +8,9 @@ import "../styles/productcard.scss";
 import "../styles/btn.scss";
 import "../styles/productpage.scss";
 import "../styles/accordion.scss";
+import "../styles/buynow.scss";
+import "../styles/homesearch.scss";
+import "../styles/filter.scss"
 
 
 

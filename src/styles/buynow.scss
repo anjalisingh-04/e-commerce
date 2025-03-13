@@ -1,0 +1,315 @@
+.product-buy-box {
+
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.inner-product-buy-box1 {
+
+    padding: 20px;
+
+
+    h2 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    p {
+        margin-top: 5px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #656464;
+    }
+}
+
+
+.login-a {
+    border: 1px solid #dcdbdb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    margin-top: 20px;
+
+
+
+    .a-log-num {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .mic {
+            color: black;
+            font-size: 12px;
+        }
+    }
+
+    .a {
+        height: 20px;
+        width: 20px;
+        border: solid 1px black;
+        border-radius: 50%;
+        text-align: center;
+        font-weight: bold;
+
+    }
+
+
+    .change-btn {
+        background-color: rgba(243, 243, 243, 0.833);
+        padding: 5px;
+        font-size: 10px;
+
+    }
+
+
+
+}
+
+
+.payment-debite {
+    margin-top: 20px;
+
+    .payment-m {
+        background-color: rgba(243, 243, 243, 0.833);
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        border-radius: 10px;
+
+
+
+        .a {
+            height: 20px;
+            width: 20px;
+            background-color: black;
+            border-radius: 50%;
+            align-items: center;
+            font-weight: bold;
+
+
+            p {
+                color: white;
+            }
+        }
+
+        p {
+            color: black;
+
+        }
+    }
+
+}
+
+
+
+.debit-credit-card {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+
+    .a {
+        height: 20px;
+        width: 20px;
+        background-color: black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    .card-img-box {
+        border: solid 1px black;
+        padding: 5px;
+        border-radius: 10px;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    p {
+        color: black;
+    }
+
+
+}
+
+
+.payment-form {
+    padding: 16px;
+
+    label {
+        display: block;
+        font-size: 10px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+
+    input,
+    select {
+        border: 1px solid #ccc;
+        padding: 8px;
+        border-radius: 6px;
+        margin-top: 4px;
+    }
+
+    .valid-date {
+        display: flex;
+        gap: 8px;
+
+    }
+
+    .cvv-input {
+        width: 100px;
+
+    }
+
+    .payment-button {
+        background-color: black;
+        color: white;
+        padding: 8px 24px;
+        border-radius: 6px;
+        font-weight: 600;
+        align-self: flex-end;
+    }
+
+    p {
+        margin-top: 10px;
+        font-size: 10px;
+        color: black;
+    }
+}
+
+
+
+
+.inner-product-buy-box2 {
+
+    padding: 10px;
+
+
+}
+
+.inner-product-order {
+
+    padding: 10px;
+    border: solid 1px rgb(216, 212, 212);
+    margin-top: 80px;
+    border-radius: 10px;
+
+    h2 {
+        border-bottom: 1px solid rgb(211, 210, 210);
+        padding: 10px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .inner-product-size {
+
+        border-bottom: solid 1px rgb(211, 210, 210);
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+
+        .product-detils {
+            p {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            .price {
+                font-size: 12px;
+            }
+
+            div {
+                display: flex;
+                gap: 10px;
+
+                .quantity {
+                    color: rgb(148, 148, 151);
+                    font-size: 13px;
+                }
+
+            }
+        }
+    }
+
+    .product-size-img {
+
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+
+    }
+
+
+    .deliv-dis-box {
+        margin-top: 10px;
+        padding: 5px;
+
+        .deliv {
+            margin-top: 10px;
+            display: flex;
+            gap: 120px;
+            align-items: center;
+
+            p {
+                font-size: 13px;
+                font-weight: bold;
+            }
+
+            .exp {
+                display: flex;
+                gap: 10px;
+
+
+                .pri {
+                    color: black;
+                }
+
+                p {
+                    color: rgb(148, 148, 151);
+
+
+                }
+
+            }
+
+
+
+
+
+        }
+
+    }
+
+    .total {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        background-color: rgba(243, 243, 243, 0.833);
+        padding: 25px;
+
+        p {
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+
+
+}
