@@ -10,7 +10,10 @@ import "../styles/productpage.scss";
 import "../styles/accordion.scss";
 import "../styles/buynow.scss";
 import "../styles/homesearch.scss";
-import "../styles/filter.scss"
+import "../styles/filter.scss";
+import "../styles/filtercard.scss";
+import "../styles/singup.scss";
+import "../styles/contact.scss";
 
 
 

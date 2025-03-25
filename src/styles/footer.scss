@@ -60,6 +60,15 @@
 
 
 
+    .footer-about {
+        color: white;
+        font-weight: 400;
+        text-decoration: none;
+
+    }
+
+
+
 
 }
 
@@ -81,7 +90,7 @@
 
 .ul {
     margin-top: 10px;
-
+    margin-left: -5px;
     display: flex;
     flex-direction: column;
     gap: 5px;

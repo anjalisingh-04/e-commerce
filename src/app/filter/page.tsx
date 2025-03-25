@@ -5,6 +5,7 @@
 import HomeWrapper from "@/components/wrapper/Home"
 
 import { useState } from 'react';
+import ProductGrid from "../filtercard/page";
 
 const menwo = [
     { name: "Men" },
@@ -63,6 +64,23 @@ const discount = [
 export default function filter() {
     const [sortBy, setSortBy] = useState('Recommended');
 
+    const [changeCategory, setChangeCategory] = useState([] as any);
+    const handleCheck = (value: any) => {
+        const arr = [...changeCategory]
+        arr.push(value)
+        setChangeCategory(arr)
+    }
+    const handleUnCheck = (value: any) => {
+        const arr = [...changeCategory];
+        const filtered = arr.filter(num => num != value)
+        setChangeCategory(filtered)
+    }
+
+
+
+
+
+
     return (
 
 
@@ -87,9 +105,26 @@ export default function filter() {
                         </div>
 
                         <div className="filter-options">
-                            <span>Bundles ▼</span>
-                            <span>Country of Origin ▼</span>
-                            <span>Size ▼</span>
+                            <div className="bundle">
+                                <span>Bundles </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi-caret-down-fill" viewBox="0 0 16 16">
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                </svg>
+                            </div>
+                            <div className="bundle">
+                                <span>Country of Origin </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi-caret-down-fill" viewBox="0 0 16 16">
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                </svg>
+                            </div>
+
+                            <div className="bundle">
+                                <span>Size </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi-caret-down-fill" viewBox="0 0 16 16">
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                </svg>
+                            </div>
+
                         </div>
 
                         <div className="sort-dropdown">
@@ -112,14 +147,39 @@ export default function filter() {
 
                     <div className="container-1">
                         <div className="filter-box">
+
                             <div className="menwo">
+
+                                <div className="container">
+                                    {changeCategory?.map((value: any) => {
+                                        return (
+                                            <>
+                                                <div className="value"> {value}
+
+                                                </div>
+
+                                            </>
+                                        )
+                                    })}
+                                </div>
+
                                 {menwo.map((item, index) => (
                                     <label key={index} >
-                                        <input type="checkbox" name="category" value={item.name} />
+                                        <input type="checkbox" name="category" value={item.name} onChange={(e) => {
+                                            if (e.target.checked) {
+
+                                                handleCheck(item.name)
+                                            }
+                                            else {
+                                                handleUnCheck(item.name)
+                                            }
+                                        }} />
                                         {item.name}
                                     </label>
                                 ))}
                             </div>
+
+
                             <div className="categories">
                                 <h5>CATEGORIES</h5>
                                 {categories.map((category, index) => (
@@ -137,6 +197,7 @@ export default function filter() {
                                     </label>
                                 ))}
                             </div>
+
                             <div className="price"></div>
                             <div className="color">
                                 <h5>COLORS</h5>
@@ -146,6 +207,7 @@ export default function filter() {
                                     </label>
                                 ))}
                             </div>
+
                             <div className="dis-range">
                                 <h5>Discount Range
                                 </h5>
@@ -156,11 +218,13 @@ export default function filter() {
                                     </label>
                                 ))}
                             </div>
+
                         </div>
                     </div>
 
 
                     <div className="container2">
+                        <ProductGrid />
 
                     </div>
 

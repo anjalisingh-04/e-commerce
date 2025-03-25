@@ -27,27 +27,28 @@ const Footer = () => {
                             <h3>Company</h3>
 
                             <ul className="ul">
-                                <Link href="#">
+
+                                <Link href="#" className="footer-about">
                                     Wholesale
                                 </Link>
 
-                                <Link href="#">
+                                <Link href="#" className="footer-about">
                                     Become a retailer
                                 </Link>
 
-                                <Link href="#">
+                                <Link href="#" className="footer-about">
                                     Corporate Orders
                                 </Link>
 
-                                <Link href="#">
+                                <Link href="#" className="footer-about">
                                     Affiliates
                                 </Link>
 
-                                <Link href="#">
+                                <Link href="#" className="footer-about">
                                     Gift cards
                                 </Link>
 
-                                <Link href="#">
+                                <Link href="#" className="footer-about">
                                     Contact
                                 </Link>
 
@@ -60,31 +61,31 @@ const Footer = () => {
                             <h3 >Resources</h3>
                             <ul className="ul">
 
-                                <Link href="#">
+                                <Link href="#" className="footer-about">
                                     About
                                 </Link>
 
-                                <Link href="#">
+                                <Link href="#" className="footer-about">
                                     Blog
                                 </Link>
 
-                                <Link href="#">
+                                <Link href="#" className="footer-about">
                                     Careers
                                 </Link>
 
-                                <Link href="#">
+                                <Link href="#" className="footer-about">
                                     Find a store
                                 </Link>
 
-                                <Link href="#">
+                                <Link href="#" className="footer-about">
                                     Press
                                 </Link>
 
-                                <Link href="#">
+                                <Link href="#" className="footer-about">
                                     Support
                                 </Link>
 
-                                <Link href="#">
+                                <Link href="#" className="footer-about">
                                     Privacy
                                 </Link>
 
@@ -122,13 +123,13 @@ const Footer = () => {
                     </div>
 
                     <div className="footer-s2">
-                        <p>© 2025 Vision - Main, All rights reserved. <span className="underline">Powered by Shopify</span></p>
+                        {/* <p>© 2025 Vision - Main, All rights reserved. <span className="underline">Powered by Shopify</span></p> */}
                         <div className="flex space-x-4 mt-2 md:mt-0">
 
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer >
         </>
     )
 }
