@@ -23,14 +23,14 @@ export function CategoryGrid() {
               key={category.name}
               className="categoriescade-outer"
             >
-              <div className="category-image-container">
+              <Link href="/filter" className="category-image-container">
                 <Image
                   src={category.image}
                   alt={category.name}
                   width={100}
                   height={100}
                   className="object-contain" />
-              </div>
+              </Link>
               <p>{category.name}</p>
             </div>
           ))}

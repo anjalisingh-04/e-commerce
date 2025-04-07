@@ -14,6 +14,8 @@ import "../styles/filter.scss";
 import "../styles/filtercard.scss";
 import "../styles/singup.scss";
 import "../styles/contact.scss";
+import "../styles/sidebar.scss";
+import "../styles/about.scss";
 
 
 

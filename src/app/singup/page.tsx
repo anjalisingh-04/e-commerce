@@ -1,6 +1,11 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 
 const sign = () => {
+
+
+
     return (
         <div>
             <div className="signup-page-div">
@@ -14,20 +19,18 @@ const sign = () => {
 
                 <form className='form'>
 
-
-
                     <div className="num-box">
-                        <label>Email</label>
+                        <label className='lab'>Email</label>
                         <br></br>
-                        <input type='email' className='num'>
+                        <input type='email' className='num' required >
                         </input>
                     </div>
 
 
                     <div className="num-box">
-                        <label>Password</label>
+                        <label className='lab'>Password</label>
                         <br></br>
-                        <input type='password' className='num'>
+                        <input type='password' className='num' required>
                         </input>
                     </div>
 
@@ -45,3 +48,5 @@ const sign = () => {
 }
 
 export default sign
+
+

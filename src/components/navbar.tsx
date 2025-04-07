@@ -5,6 +5,7 @@
 import Link from 'next/link';
 import { SetStateAction, useState } from 'react';
 
+
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -35,7 +36,6 @@ export default function Navbar() {
 
                     <div className='nav-s1'>
 
-
                         <div className="md:hidden flex items-center space-x-4">
                             <button onClick={toggleMenu} className="text-gray-700">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -44,11 +44,11 @@ export default function Navbar() {
                             </button>
                         </div>
 
-                        <div className="logo-name">
-                            <span className="text-black">VISI</span>
-                            <span className="text-yellow-400">O</span>
-                            <span className="text-black">N</span>
-                        </div>
+                        <Link href="/" className="logo-name">
+
+                            <span className=" text-yellow-400">Deo</span>
+                            <span className=" text-black">Hub</span>
+                        </Link>
 
                         <div className="nav-s1-box1">
                             <div className="hidden md:flex space-x-8 text-gray-700 text-sm">
@@ -81,7 +81,7 @@ export default function Navbar() {
                                 </Link>
 
 
-                                <Link href="profile" className='icon-im'> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="bi-person-circle" viewBox="0 0 16 16">
+                                <Link href="/singup" className='icon-im'> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="bi-person-circle" viewBox="0 0 16 16">
                                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                                     <path fillRule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                                 </svg>
@@ -245,8 +245,9 @@ export default function Navbar() {
 
             </nav>
 
-            {isMenuOpen && (
+            {/* {isMenuOpen && (
                 <div className="md:hidden bg-white shadow-md px-6 py-4 space-y-4 text-gray-700">
+
                     <Link href="" className='nav-s2-url'>What's New</Link>
                     <Link href="" className='nav-s2-url'>Skin</Link>
                     <Link href="" className='nav-s2-url'>Men</Link>
@@ -264,7 +265,7 @@ export default function Navbar() {
                     <Link href="#" className="block hover:text-black">Accessories</Link>
                     <Link href="#" className="block hover:text-black">Journal</Link>
                 </div>
-            )}
+            )} */}
         </header>
     );
 }

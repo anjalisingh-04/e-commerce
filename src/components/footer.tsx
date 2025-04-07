@@ -19,7 +19,7 @@ const Footer = () => {
                     <div className="in-footer-continer">
 
                         <div>
-                            <h2>VISION</h2>
+                            <h2>DeoHub</h2>
                             <p className='p1'>Elevate your home<br></br> with smart technology.</p>
                         </div>
 
@@ -48,7 +48,7 @@ const Footer = () => {
                                     Gift cards
                                 </Link>
 
-                                <Link href="#" className="footer-about">
+                                <Link href="/contact" className="footer-about">
                                     Contact
                                 </Link>
 
